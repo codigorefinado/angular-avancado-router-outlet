@@ -9,8 +9,7 @@ const routes: Routes = [ {
     { path: 'pessoa', component: PessoaComponent, outlet: 'pessoa' },
     { path: 'endereco', component: EnderecoComponent, outlet: 'endereco' },
   ]
-}
-];
+} ];
 
 @NgModule({
   imports: [ RouterModule.forChild(routes) ],

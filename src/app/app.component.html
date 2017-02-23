@@ -1,18 +1,22 @@
 <h1>
-  {{title}}
+    {{title}}
 </h1>
 
 
-<a [routerLink]="[{ outlets: { negrito: ['bem-vindo'] } }]">b</a>
-<a [routerLink]="[{ outlets: { italico: ['contato'] } }]">c</a>
+<a [routerLink]="[{ outlets: { negrito: ['bem-vindo'] } }]">Bem vindo</a>
+<a [routerLink]="[{ outlets: { italico: ['contato'] } }]">Contato</a>
+
+<a [routerLink]="'prospecto'">Prospecto</a>
+<a [routerLink]="['prospecto', {outlets: {pessoa: ['pessoa'], endereco: ['endereco']  }}]">Prospecto</a>
+
 
 <router-outlet></router-outlet>
 
 <B>
-  <router-outlet name="negrito"></router-outlet>
+    <router-outlet name="negrito"></router-outlet>
 </B>
 
 
 <i>
-  <router-outlet name="italico"></router-outlet>
+    <router-outlet name="italico"></router-outlet>
 </i>
