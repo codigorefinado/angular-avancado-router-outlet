@@ -7,6 +7,7 @@ import { BemVindoModule } from './bem-vindo/bem-vindo.module';
 import { ContatoModule } from './contato/contato.module';
 import { AppRoutingModule } from './app-routing.module';
 import { QuemSomosModule } from './quem-somos/quem-somos.module';
+import { ProspectModule } from './prospecto/prospecto.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuemSomosModule } from './quem-somos/quem-somos.module';
     AppRoutingModule,
     QuemSomosModule,
     BemVindoModule,
-    ContatoModule
+    ContatoModule,
+    ProspectModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
