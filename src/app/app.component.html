@@ -11,6 +11,8 @@
 <a [routerLink]="'prospecto'">Prospecto</a>
 <a [routerLink]="['prospecto', {outlets: {mestre: ['pessoa'], detalhe: ['endereco']  }}]">Prospecto</a>
 
+<a [routerLink]="['prospecto', {outlets: {mestre: ['pessoa'] }}]">Prospecto só pessoa</a>
+<a [routerLink]="['prospecto', {outlets: {detalhe: ['endereco']  }}]">Prospecto só endereço</a>
 
 <router-outlet></router-outlet>
 
