@@ -3,11 +3,13 @@
 </h1>
 
 
+<a [routerLink]="''">Quem somos</a>
+
 <a [routerLink]="[{ outlets: { negrito: ['bem-vindo'] } }]">Bem vindo</a>
 <a [routerLink]="[{ outlets: { italico: ['contato'] } }]">Contato</a>
 
 <a [routerLink]="'prospecto'">Prospecto</a>
-<a [routerLink]="['prospecto', {outlets: {pessoa: ['pessoa'], endereco: ['endereco']  }}]">Prospecto</a>
+<a [routerLink]="['prospecto', {outlets: {mestre: ['pessoa'], detalhe: ['endereco']  }}]">Prospecto</a>
 
 
 <router-outlet></router-outlet>
@@ -15,7 +17,6 @@
 <B>
     <router-outlet name="negrito"></router-outlet>
 </B>
-
 
 <i>
     <router-outlet name="italico"></router-outlet>

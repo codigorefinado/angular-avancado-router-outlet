@@ -6,8 +6,8 @@ import { EnderecoComponent } from './endereco/endereco.component';
 
 const routes: Routes = [ {
   path: 'prospecto', component: ProspectoComponent, children: [
-    { path: 'pessoa', component: PessoaComponent, outlet: 'pessoa' },
-    { path: 'endereco', component: EnderecoComponent, outlet: 'endereco' },
+    { path: 'pessoa', component: PessoaComponent, outlet: 'mestre' },
+    { path: 'endereco', component: EnderecoComponent, outlet: 'detalhe' },
   ]
 } ];
 
