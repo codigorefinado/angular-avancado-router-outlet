@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class AngularAvancadoRouterOutletPage {
+export class AngularEssencialRouterOutletPage {
   navigateTo() {
     return browser.get('/');
   }
