@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   selector: 'child-one',
   template: 'Child One'
 })
-export default class ChildOne {
+export class ChildOneComponent {
 }

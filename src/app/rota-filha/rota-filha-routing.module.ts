@@ -1,29 +1,38 @@
 import { Routes, RouterModule } from '@angular/router';
-import ChildOne from './child-one';
-import ChildTwo from './child-two';
-import ChildTwoNested from './child-two-nested';
-import ComponentOne from './component-one.component';
-import ComponentTwo from './component-two.component';
 import { NgModule } from '@angular/core';
+import { ChildOneComponent } from './child-one.component';
+import { ChildTwoComponent } from './child-two.component';
+import { ChildTwoNestedComponent } from './child-two-nested.component';
+import { ComponentOneComponent } from './component-one.component';
+import { ComponentTwoComponent } from './component-two.component';
+import { RotaFilhaComponent } from './rota-filha.component';
 
-export const routes: Routes = [
-  { path: '', redirectTo: 'component-one', pathMatch: 'full' },
-  { path: 'component-one', component: ComponentOne },
+const routes: Routes = [
+
   {
-    path: 'component-two/:id', component: ComponentTwo,
+    path: 'rota-filha', component: RotaFilhaComponent,
     children: [
-      { path: '', redirectTo: 'child-one', pathMatch: 'full' },
-      { path: 'child-one', component: ChildOne },
+      { path: '', redirectTo: 'component-one', pathMatch: 'full' },
+      { path: 'component-one', component: ComponentOneComponent },
       {
-        path: 'child-two', component: ChildTwo,
+        path: 'component-two/:id', component: ComponentTwoComponent,
         children: [
           { path: '', redirectTo: 'child-one', pathMatch: 'full' },
-          { path: 'child-one', component: ChildOne },
-          { path: 'child-two-nested', component: ChildTwoNested }
+          { path: 'child-one', component: ChildOneComponent },
+          {
+            path: 'child-two', component: ChildTwoComponent,
+            children: [
+              { path: '', redirectTo: 'child-one', pathMatch: 'full' },
+              { path: 'child-one', component: ChildOneComponent },
+              { path: 'child-two-nested', component: ChildTwoNestedComponent }
+            ]
+          }
         ]
       }
     ]
-  }
+  },
+
+
 ];
 
 @NgModule({

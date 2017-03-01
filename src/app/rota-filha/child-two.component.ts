@@ -19,5 +19,5 @@ import { Component } from '@angular/core';
     </div>
   `
 })
-export default class ChildTwo {
+export class ChildTwoComponent {
 }

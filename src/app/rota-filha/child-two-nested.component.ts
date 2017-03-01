@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   selector: 'child-two-nested',
   template: 'Child Two Nested'
 })
-export default class ChildTwoNested {
+export class ChildTwoNestedComponent {
 }

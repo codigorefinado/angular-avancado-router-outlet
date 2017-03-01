@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'component-one',
   template: 'Component One'
 })
-export default class ComponentOne {
+export class ComponentOneComponent {
 
 }

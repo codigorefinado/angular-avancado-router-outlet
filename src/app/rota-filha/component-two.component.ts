@@ -18,7 +18,7 @@ import { ActivatedRoute } from '@angular/router';
     </div>
   `
 })
-export class ComponentTwo {
+export class ComponentTwoComponent {
   private id;
   private sub;
 

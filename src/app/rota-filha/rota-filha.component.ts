@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app',
   template: `
     <nav>
-      <a [routerLink]="['/component-one']">Component One</a>
-      <a [routerLink]="['/component-two', 123]">Component Two (id: 123)</a>
+      <a [routerLink]="['/rota-filha/component-one']">Component One</a>
+      <a [routerLink]="['/rota-filha/component-two', 123]">Component Two (id: 123)</a>
     </nav>
 
     <div style="color: green; margin-top: 1rem;">Outlet:</div>
