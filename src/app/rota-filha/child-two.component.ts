@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
       <a [routerLink]="['child-two-nested']">Child Two Nested</a><br />
       <a [routerLink]="['../child-one']">../Child One</a><br />
       <a [routerLink]="['../child-two']">../Child Two</a><br />
-      <a [routerLink]="['/component-two', 456]">/Component Two, 456</a><br />
+      <a [routerLink]="['../../../component-two', 456]">/Component Two, 456</a><br />
     </nav>
     
     <div style="color: orange; margin-top: 1rem;">Child Two's router outlet:</div>
